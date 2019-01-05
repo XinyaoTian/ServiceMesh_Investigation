@@ -1,7 +1,7 @@
 # Service Mesh 深入调研
 _Made By XinyaoTian_
 
-“A service mesh is a dedicated infrastructure layer for handling service-to-service communication. “ —— William Morgan
+> “A service mesh is a dedicated infrastructure layer for handling service-to-service communication. “ —— William Morgan
 
 Service Mesh 是一个专注于处理服务间通信的基础设施层。
 
@@ -48,7 +48,17 @@ Service Mesh 实际上就是处于 TCP/IP 之上的一个抽象层，它假设�
 
 与TCP不同的是，Service Mesh有着更高的目标：为应用运行时提供统一的、应用层面的可见性和可控性。通过每个微服务中的 Sidecar ，Service Mesh 得以将服务间通信从底层的基础设施中分离出来，让它成为整个生态系统的一等公民——它不再是单纯的基础设施，更可以被监控、托管和控制。
 
-Service Mesh 的未来
+## Service Mesh 的未来
 
 尽管 Service Mesh 在云原生系统方面的应用已经有了快速的增长，但仍然存在巨大的提升空间。服务发现和访问策略在云原生环境中仍显初级，而 Service Mesh 毫无疑问将成为这方面不可或缺的基础。就像 TCP/IP 作为互联网的基础一样，Service Mesh 将在微服务的底层基础设施这条路上更进一步。
 
+## Service Mesh 的发展现状
+目前，由 Google , IBM 和 Lyft 公司共同研发的 Istio 非常火爆。Istio 是 Service Mesh 的一个实现，可以看作是一个“微服务管理框架”，一般配合 Kubernetes 使用。Istio 使用 Envoy 作为 Sidecar，并精细地实现了 Service Mesh 对于上述微服务之间传输的诸多设想，并且添加了许多强大的额外功能。
+
+
+## 参考资料及文献：
+
+1. "What’s a service mesh? And why do I need one?",  William Morgan , 薛命灯 译
+2. "Service Mesh：下一代微服务", 敖小剑
+3. "What is Istio?", Istio documents
+4. Service Mesh 中文网
